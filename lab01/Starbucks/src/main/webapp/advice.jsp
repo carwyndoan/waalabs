@@ -16,7 +16,7 @@
 <body>
     <h2>Ask for advice about your favorite roast:</h2>
     <p />
-    <form action = "action/advice" method="get">
+    <form action = "action/advice" method="post">
         <select name="roast">
             <option value="-">--Choose Roast--</option>
             <option value="dark">Dark</option>
@@ -27,7 +27,9 @@
         <input type="submit" value = "Submit"/>
     </form>
     <div id='advice'>
-        <c:forEach
+        <c:forEach var="item" items="${roast}">
+            <br><c:out value="${item}"></c:out>
+        </c:forEach>
     </div>
 </body>
 </html>

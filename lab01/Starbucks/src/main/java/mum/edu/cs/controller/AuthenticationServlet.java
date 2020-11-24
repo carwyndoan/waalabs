@@ -1,4 +1,4 @@
-package mum.edu.cs;
+package mum.edu.cs.controller;
 
 import java.io.IOException;
 import java.io.PrintWriter;
