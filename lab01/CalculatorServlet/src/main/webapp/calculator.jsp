@@ -21,8 +21,8 @@
         <input type = "submit" value = "Submit"/>
     </form>
     <p>
-        ${add1} + ${add2} = ${sum}<br>
-        ${mult1} * ${mult2} = ${product}
+        ${result.add1} + ${result.add2} = ${result.sum}<br>
+        ${result.mult1} * ${result.mult2} = ${result.product}
     </p>
 </body>
 </html>
