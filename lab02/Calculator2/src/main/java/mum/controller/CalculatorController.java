@@ -27,12 +27,12 @@ public class CalculatorController {
 	CalculatorValidator calculatorValidator;
 
 	@RequestMapping(value = { "/", "/calculator_input" })
-	protected String inputCalculator(HttpServletRequest request, HttpServletResponse response) {
+	 public String inputCalculator(HttpServletRequest request, HttpServletResponse response) {
 		return "/WEB-INF/jsp/CalculatorForm.jsp";
 	}
 
 	@RequestMapping(value = "/calculator_save")
-	protected String saveCalculator(Calculator calculator, HttpServletRequest request, HttpServletResponse response) {
+	public String saveCalculator(Calculator calculator, HttpServletRequest request, HttpServletResponse response) {
 		List<String> errors = calculatorValidator.validate(calculator);
 		if (errors.isEmpty()) {
 			// store product in a scope variable for the view

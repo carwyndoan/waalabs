@@ -25,7 +25,7 @@
             <legend>Add a product</legend>
             <p>
                 <input type = "text" name = "add1" size = "2"  value = "${form.add1}" /> +
-                <input type = "text" name = "add2" value = "${form.add12}" size = "2"/> =
+                <input type = "text" name = "add2" value = "${form.add2}" size = "2"/> =
                 <input type = "text" name = "sum" value = "${form.sum}"  size = "2" readonly/>
             </p>
             <p>
