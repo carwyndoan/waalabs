@@ -1,4 +1,3 @@
-<%@ page isELIgnored="false" %>
 <!DOCTYPE HTML>
 <html>
 <head>
