@@ -1,10 +1,12 @@
 package mum.validator;
 
 import mum.domain.Calculator;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 
+@Service
 public class CalculatorValidatorImpl implements CalculatorValidator {
 	
 	public List<String> validate(Object  object ) {

@@ -22,7 +22,7 @@ public class CalculatorController {
 
 	@RequestMapping(value = { "/", "/calculator_input" })
 	 public String inputCalculator(HttpServletRequest request, HttpServletResponse response) {
-		return "/WEB-INF/jsp/CalculatorForm.jsp";
+		return "CalculatorForm";///WEB-INF/jsp/CalculatorForm
 	}
 
 	@RequestMapping(value = "/calculator_save")
@@ -39,7 +39,7 @@ public class CalculatorController {
 //			return "/WEB-INF/jsp/CalculatorForm.jsp";
 		}
 		request.setAttribute("form", calculator);
-		return "/WEB-INF/jsp/CalculatorForm.jsp";
+		return "CalculatorForm";
 	}
 
 }
