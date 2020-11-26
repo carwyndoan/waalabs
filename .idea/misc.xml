@@ -4,13 +4,12 @@
     <file type="web" url="file://$PROJECT_DIR$/lab01/CalculatorServlet" />
     <file type="web" url="file://$PROJECT_DIR$/lab01/Starbucks" />
     <file type="web" url="file://$PROJECT_DIR$/lab02/Calculator2" />
+    <file type="web" url="file://$PROJECT_DIR$/lab03/Calculator" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/lab01/CalculatorServlet/pom.xml" />
-        <option value="$PROJECT_DIR$/lab01/Starbucks/pom.xml" />
-        <option value="$PROJECT_DIR$/lab02/Calculator2/pom.xml" />
+        <option value="$PROJECT_DIR$/lab03/Calculator/pom.xml" />
       </list>
     </option>
   </component>

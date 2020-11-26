@@ -6,12 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CalculatorServlet" />
-        <module name="Starbucks" />
-        <module name="Calculator2" />
+        <module name="Calculator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="Calculator" target="1.7" />
       <module name="Calculator2" target="1.7" />
       <module name="CalculatorServlet" target="1.7" />
       <module name="Starbucks" target="1.7" />
