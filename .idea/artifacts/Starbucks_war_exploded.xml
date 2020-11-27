@@ -1,6 +1,6 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="Starbucks:war exploded">
-    <output-path>$PROJECT_DIR$/lab01/Starbucks/target/Starbucks</output-path>
+    <output-path>$PROJECT_DIR$/lab03/Starbucks/target/Lab03_Starbucks</output-path>
     <properties id="maven-jee-properties">
       <options>
         <exploded>true</exploded>
@@ -14,14 +14,19 @@
           <element id="module-output" name="Starbucks" />
         </element>
         <element id="directory" name="lib">
-          <element id="library" level="project" name="Maven: com.google.code.gson:gson:2.8.2" />
           <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
-          <element id="library" level="project" name="Maven: javax.servlet.jsp:jsp-api:2.1" />
-          <element id="library" level="project" name="Maven: com.itextpdf:itextpdf:5.5.13.2" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-aop:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-beans:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-context:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-core:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-jcl:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.3.1" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-web:5.3.1" />
         </element>
       </element>
       <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/lab01/Starbucks/target/Starbucks/META-INF/MANIFEST.MF" />
+        <element id="file-copy" path="$PROJECT_DIR$/lab03/Starbucks/target/Lab03_Starbucks/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="Starbucks/web/Web" />
     </root>
