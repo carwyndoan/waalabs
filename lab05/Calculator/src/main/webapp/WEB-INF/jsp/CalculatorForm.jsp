@@ -20,7 +20,7 @@
         </ul>
     </c:if>
 
-    <form action="calculator_save" method="post">
+    <form action="calculator" method="post">
         <fieldset>
             <legend>Add a product</legend>
             <p>
@@ -39,6 +39,7 @@
             </p>
         </fieldset>
     </form>
+    ${string}
 </div>
 </body>
 </html>
