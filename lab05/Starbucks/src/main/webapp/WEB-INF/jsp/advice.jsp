@@ -32,6 +32,9 @@
         <input type="submit" value = "Submit"/>
     </form>
     <div id='advice'>
+        <p>
+            Advice of ${userinfo}:
+        </p>
         <c:forEach var="item" items="${roast}">
             <br><c:out value="${item}"></c:out>
         </c:forEach>
