@@ -15,35 +15,34 @@ import javax.servlet.http.HttpServletResponse;
 import edu.miu.data.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.*;
 
 @Controller
+@SessionAttributes({"userinfo"})
 public class AuthenticationController {
 	private static final long serialVersionUID = 1L;
 
 	@Autowired
 	DataFacade data;
 
-	@RequestMapping(value = { "/", "/login" })
-	protected String inputLogin(HttpServletRequest request, HttpServletResponse response) {
+	@RequestMapping(value = { "/", "/login" }, method = RequestMethod.GET)
+	protected String loginForm() {
 		return "index";
 	}
 
-	@RequestMapping(value = "/authenticate")
-	protected String saveLogin(HttpServletRequest request, HttpServletResponse response) {
- 
-		String name = request.getParameter("name");
-		String password = request.getParameter("password");
-
+	@RequestMapping(value = "/login", method = RequestMethod.POST)
+	protected String checkLogin(Model model, @RequestParam("name") String name, @RequestParam("password") String password) {
 		String expectedPassword = data.findPassword(name );
 		
 		if(expectedPassword == null || !expectedPassword.equals(password)) {
-			request.setAttribute("errors", "Invalid username or password");
-			request.setAttribute("name", name);
+			model.addAttribute("errors", "Invalid username or password");
+			model.addAttribute("name", name);
 			return "index";
 		} else {
-			return  "advice";
+			model.addAttribute("userinfo", name);
+			System.out.println("session redirect: " + model.asMap().get("userinfo"));
+			return  "redirect:/advice";
 		}
 	}
-
 }

@@ -12,7 +12,7 @@
 
 
     <context:component-scan base-package="edu.miu" />
-    <mvc:annotation-driven />
+    <mvc:annotation-driven ignore-default-model-on-redirect="true" />
 
     <!-- OR <mvc:default-servlet-handler /> -->
     <mvc:resources mapping="/resources/**" location="/WEB-INF/resources/" />

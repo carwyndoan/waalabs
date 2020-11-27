@@ -14,9 +14,14 @@
     <title>Advice</title>
 </head>
 <body>
+    <p>
+        <form action="logout">
+            <input type="submit" value = "Logout"/>
+        </form>
+    </p>
     <h2>Ask for advice about your favorite roast:</h2>
     <p />
-    <form action = "get_advice" method="post">
+    <form action = "advice" method="post">
         <select name="roast">
             <option value="-">--Choose Roast--</option>
             <option value="dark">Dark</option>

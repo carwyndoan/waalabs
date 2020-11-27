@@ -11,7 +11,7 @@
 </c:if>
 
 <h2>Login</h2>
-<form action = "authenticate" method = "post">
+<form action = "login" method = "post">
     Name: <input type = "text" name = "name" size = "9" value="${name}"/><br/>
     Password: <input type = "password" name = "password" size = "9" /><br/>
     <br/>
