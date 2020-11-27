@@ -6,11 +6,12 @@
     <file type="web" url="file://$PROJECT_DIR$/lab02/Calculator2" />
     <file type="web" url="file://$PROJECT_DIR$/lab03/Calculator" />
     <file type="web" url="file://$PROJECT_DIR$/lab03/Starbucks" />
+    <file type="web" url="file://$PROJECT_DIR$/lab04/Product" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/lab03/Starbucks/pom.xml" />
+        <option value="$PROJECT_DIR$/lab04/Product/pom.xml" />
       </list>
     </option>
   </component>
