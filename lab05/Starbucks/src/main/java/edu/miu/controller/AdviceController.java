@@ -23,7 +23,6 @@ public class AdviceController {
 
 	@RequestMapping(value = "/advice", method = RequestMethod.GET)
 	public String formAdvice(Model model) {
-		System.out.println("session: " + model.asMap().get("userinfo"));
 		if(!model.asMap().containsKey("userinfo")){
 			return "redirect:/login";
 		}
@@ -32,6 +31,9 @@ public class AdviceController {
 
 	@RequestMapping(value = "/advice", method = RequestMethod.POST)
 	public String getAdvice(Model model, @RequestParam("roast") String roast) {
+		if(!model.asMap().containsKey("userinfo")){
+			return "redirect:/login";
+		}
 		List<String> advice = data.getAdvice(roast);
 		model.addAttribute("roast", advice);
 		return "advice";
