@@ -14,22 +14,19 @@ import javax.servlet.http.HttpServletResponse;
 
 import edu.miu.data.*;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
-@Service
+@Controller
 public class AdviceController {
 	private static final long serialVersionUID = 1L;
 
 	@Autowired
 	DataFacade data;
 
-	@RequestMapping(value = "/get_advice", method = RequestMethod.GET)
-	public String inputAdvice(HttpServletRequest request, HttpServletResponse response) {
-		return "advice";
-	}
-	@RequestMapping(value = "/get_advice", method = RequestMethod.POST)
+	@RequestMapping(value = "/get_advice")
 	public String saveAdvice(HttpServletRequest request, HttpServletResponse response) {
 		String roast = request.getParameter("roast");
 		List<String> advice = data.getAdvice(roast);
