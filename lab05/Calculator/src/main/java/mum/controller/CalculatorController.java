@@ -4,6 +4,7 @@ import mum.domain.Calculator;
 import mum.validator.CalculatorValidator;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -21,12 +22,12 @@ public class CalculatorController {
 	CalculatorValidator calculatorValidator;
 
 	@RequestMapping(value = { "/", "/calculator" }, method = RequestMethod.GET)
-	 public String inputCalculator(Model model) {
+	 public String inputCalculator(@ModelAttribute("form") Calculator model) {
 		return "CalculatorForm";
 	}
 
 	@RequestMapping(value = "/calculator", method = RequestMethod.POST)
-	public String saveCalculator(Calculator calculator, Model model, RedirectAttributes redirectAttributes) {
+	public String saveCalculator(Calculator calculator, RedirectAttributes redirectAttributes) {
 		List<String> errors = calculatorValidator.validate(calculator);
 		if (errors.isEmpty()) {
 			// store product in a scope variable for the view

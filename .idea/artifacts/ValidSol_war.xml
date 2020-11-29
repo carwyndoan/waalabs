@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ValidSol:war">
+    <output-path>$PROJECT_DIR$/lab06/ValidSol/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ValidSol</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ValidSol.war">
+      <element id="artifact" artifact-name="ValidSol:war exploded" />
+    </root>
+  </artifact>
+</component>

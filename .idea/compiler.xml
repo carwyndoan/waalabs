@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Starbucks" />
-        <module name="Calculator" />
+        <module name="ValidSol" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -16,6 +15,8 @@
       <module name="CalculatorServlet" target="1.7" />
       <module name="Product" target="1.8" />
       <module name="Starbucks" target="1.7" />
+      <module name="Validation" target="1.5" />
+      <module name="ValidSol" target="1.7" />
     </bytecodeTargetLevel>
   </component>
 </project>

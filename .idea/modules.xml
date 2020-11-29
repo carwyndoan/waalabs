@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/lab01/CalculatorServlet/CalculatorServlet.iml" filepath="$PROJECT_DIR$/lab01/CalculatorServlet/CalculatorServlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab04/Product/Product.iml" filepath="$PROJECT_DIR$/lab04/Product/Product.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab05/Starbucks/Starbucks.iml" filepath="$PROJECT_DIR$/lab05/Starbucks/Starbucks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab06/ValidSol/ValidSol.iml" filepath="$PROJECT_DIR$/lab06/ValidSol/ValidSol.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/waalabs.iml" filepath="$PROJECT_DIR$/.idea/waalabs.iml" />
     </modules>
   </component>
