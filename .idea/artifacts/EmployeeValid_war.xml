@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="EmployeeValid:war">
+    <output-path>$PROJECT_DIR$/lab07/EmployeeValid/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>EmployeeValid</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="EmployeeValid.war">
+      <element id="artifact" artifact-name="EmployeeValid:war exploded" />
+    </root>
+  </artifact>
+</component>

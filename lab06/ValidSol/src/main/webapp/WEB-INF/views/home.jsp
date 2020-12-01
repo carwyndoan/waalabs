@@ -1,3 +1,4 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ page session="false" %>
@@ -7,7 +8,7 @@
 </head>
 <body>
 <h1>
-	Hello Kemosabe!!!  
+	Hello Kemosabe!!! Chào các em
 </h1>
 
 <p>
