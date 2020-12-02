@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>403 error</title>
+</head>
+<body>
+
+	<center>
+
+		<img src="<spring:url value="/image/error_page.jpg" htmlEscape="true" />"
+			alt="Page not found  JSP!!!" />
+
+		<H2>${requestScope['javax.servlet.error.message']}</H2>
+
+		<p>
+			<button type=button onclick=window.location.href="<spring:url value="/employee_input" />">Home</button>
+		</p>
+
+	</center>
+</body>
+</html>

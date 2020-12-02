@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head><title layout:title-pattern="$CONTENT_TITLE - $LAYOUT_TITLE">MUM</title></head>
+<body>
+<nav th:replace="fragments/dashboard_nav :: nav">This nav content
+    is going to be replaced.</nav>
+<div id="main-content" layout:fragment="main-content">
+    <p>This content will be replaced if the page using the layout
+        also defines a layout:fragment="content" segment.</p>
+</div>
+<footer th:replace="fragments/dashboard_footer :: footer"> </footer>
+</body>
+</html>

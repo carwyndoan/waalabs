@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Employee Form</title>
+    <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+</head>
+<body>
+    <section>
+        <div class="pull-right" style="padding-right:50px">
+            <a href="?lang=en">English</a>|<a href="?lang=vi_VN">Vietnamese</a>
+        </div>
+    </section>
+    <div class="col" layout:fragment="main-content">
+        <div id="global">
+            <form action="#" th:action="@{/employee_save}" th:object="${employee}"
+                  method="post">
+                <fieldset>
+                    <legend><span th:text="#{employee.form.title}">Add an Employee</span></legend>
+                    <ul th:if="${#fields.hasErrors('*')}">
+                        <li th:each="err : ${#fields.errors('*')}" th:text="${err}" >Input
+                            is incorrect</li>
+                    </ul>
+                    <p>
+                        <label for="id"><span data-th-text="#{addEmployee.form.id.label}">ID</span></label> <input type="text" id="id" th:field="*{id}" />
+                        <p th:if="${#fields.hasErrors('id')}" th:errors="*{id}" th:errorclass="fieldError">Incorrect id</p>
+                    </p>
+                    <p>
+                        <label for="firstName"><span th:text="#{addEmployee.form.firstName.label}">First Name: </span></label> <input id="firstName" type="text" th:field="*{firstName}" />
+                    <p th:if="${#fields.hasErrors('firstName')}" th:errors="*{firstName}" th:errorclass="fieldError">Incorrect name</p>
+                    </p>
+                    <p>
+                        <label for="lastName"><span th:text="#{addEmployee.form.lastName.label}">Last Name: </span></label> <input id="lastName" type="text" th:field="*{lastName}" />
+                    <p th:if="${#fields.hasErrors('lastName')}" th:errors="*{lastName}" th:errorclass="fieldError">Incorrect last name</p>
+                    </p>
+
+                    <p>
+                        <label for="birthDate"><span th:text="#{addEmployee.form.dateOfBirth.label}">Date Of Birth: </span></label> <input id="birthDate" type="text" th:field="*{birthDate}" />
+                    <p th:if="${#fields.hasErrors('birthDate')}" th:errors="*{birthDate}" th:errorclass="fieldError">Incorrect date</p>
+                    </p>
+                    <p>
+                        <label for="salaryLevel"><span th:text="#{addEmployee.form.salary.label}">Salary: </span></label> <input id="salaryLevel" type="text" th:field="*{salaryLevel}" />
+                    <p th:if="${#fields.hasErrors('salaryLevel')}" th:errors="*{salaryLevel}" th:errorclass="fieldError">Incorrect salary</p>
+                    </p>
+                    <p>
+                        <label for="street"><span th:text="#{addEmployee.form.street.label}">Street: </span></label> <input type="text" id="street" th:field="*{address.street}" />
+                    <p th:if="${#fields.hasErrors('address.street')}" th:errors="*{address.street}" th:errorclass="fieldError">Incorrect street</p>
+                    </p>
+                    <p>
+                        <label for="state"><span th:text="#{addEmployee.form.state.label}">State: </span></label> <input type="text" id="state" th:field="*{address.state}" />
+                    <p th:if="${#fields.hasErrors('address.state')}" th:errors="*{address.state}" th:errorclass="fieldError">Incorrect state</p>
+                    </p>
+                    <p>
+                        <label for="zipCode"><span th:text="#{addEmployee.form.zip.label}">Zip: </span></label> <input type="text" id="zipCode" th:field="*{address.zipCode}" />
+                    <p th:if="${#fields.hasErrors('address.zipCode')}" th:errors="*{address.zipCode}" th:errorclass="fieldError">Incorrect zipcode</p>
+                    </p>
+                    <p id="buttons">
+                        <input id="reset" type="reset" th:value="#{addEmployee.form.button.reset}" value="Reset form" tabindex="4"> <input
+                            id="submit" type="submit" tabindex="5" th:value="#{addEmployee.form.button.add}" value="Add Employee">
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
