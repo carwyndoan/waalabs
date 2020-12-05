@@ -5,8 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/lab05/Calculator/Calculator.iml" filepath="$PROJECT_DIR$/lab05/Calculator/Calculator.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab02/Calculator2/Calculator2.iml" filepath="$PROJECT_DIR$/lab02/Calculator2/Calculator2.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab01/CalculatorServlet/CalculatorServlet.iml" filepath="$PROJECT_DIR$/lab01/CalculatorServlet/CalculatorServlet.iml" />
-      <module fileurl="file://$PROJECT_DIR$/lab07/EmployeeValid/EmployeeValid.iml" filepath="$PROJECT_DIR$/lab07/EmployeeValid/EmployeeValid.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab04/Product/Product.iml" filepath="$PROJECT_DIR$/lab04/Product/Product.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lab09/RestfulEmployee/RestfulEmployee.iml" filepath="$PROJECT_DIR$/lab09/RestfulEmployee/RestfulEmployee.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab05/Starbucks/Starbucks.iml" filepath="$PROJECT_DIR$/lab05/Starbucks/Starbucks.iml" />
       <module fileurl="file://$PROJECT_DIR$/lab06/ValidSol/ValidSol.iml" filepath="$PROJECT_DIR$/lab06/ValidSol/ValidSol.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/waalabs.iml" filepath="$PROJECT_DIR$/.idea/waalabs.iml" />
